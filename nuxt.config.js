@@ -1,4 +1,13 @@
-const config = require('./.contentful.json')
+// const config = require('./.contentful.json')
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/KBI/'
+  }
+} : {}
+
+export default {
+  ...routerBase
+}
 
 
 module.exports = {
@@ -24,11 +33,11 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
 
-  env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
+  // env: {
+  //   CTF_SPACE_ID: config.CTF_SPACE_ID,
+  //   CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
     
-  },
+  // },
 
   
 
