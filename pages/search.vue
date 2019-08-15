@@ -400,19 +400,7 @@ padding:.5rem;*/
 
 }
 
-.ais-ClearRefinements-button {
-  background-color:transparent;
-  color:gray;
-  text-decoration: underline;
-}
 
-.ais-ClearRefinements-button:hover{
-
-  background-color: transparent;
-  color:gray;
-
-
-}
 
 .ais-Menu-count {
   color:#718096;
